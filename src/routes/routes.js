@@ -21,31 +21,6 @@ const Routes = () => {
     <div>
       <Router>
         <Navigationbar/>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/viewRegister">Registro</Link>
-          </li>
-          <li>
-            <Link to="/viewRegisterPost">Registro de Postagem</Link>
-          </li>
-          <li>
-            <Link to="/viewFeed">Feed</Link>
-          </li>
-          <li>
-            <Link to="/viewProfile">Perfil</Link>
-          </li>
-          <li>
-            <Link to="/viewPost">Postagem</Link>
-          </li>
-          <li>
-            <Link to="/viewComponents">Componentes</Link>
-          </li>
-        </ul>
-
-        <hr />
 
         <Switch>
           <Route exact path="/">
