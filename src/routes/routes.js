@@ -5,7 +5,8 @@ import ViewRegisterPost from  '../views/viewRegisterPost.jsx'
 import ViewFeed from '../views/viewFeed.jsx'
 import ViewProfile from '../views/viewProfile.jsx'
 import ViewPost from '../views/viewPost'
-import ReactDOM from "react-dom";
+import ViewComponents from '../views/viewComponents'
+import Navigationbar from '../components/navbar/navbar'
 import {
   BrowserRouter as Router,
   Switch,
@@ -19,6 +20,7 @@ const Routes = () => {
   return (
     <div>
       <Router>
+        <Navigationbar/>
         <ul>
           <li>
             <Link to="/">Home</Link>
@@ -37,6 +39,9 @@ const Routes = () => {
           </li>
           <li>
             <Link to="/viewPost">Postagem</Link>
+          </li>
+          <li>
+            <Link to="/viewComponents">Componentes</Link>
           </li>
         </ul>
 
@@ -60,6 +65,9 @@ const Routes = () => {
           </Route>
           <Route path="/viewPost">
             <ViewPost/>
+          </Route>
+          <Route path="/viewComponents">
+            <ViewComponents/>
           </Route>
         </Switch>
       </Router>
