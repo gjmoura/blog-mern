@@ -1,0 +1,44 @@
+@import '../variables.scss';
+
+#button-pattern {
+  background-color: $dark-color;
+  color: $white;
+  border-color: $dark-color;
+
+  &:hover:not([disabled]) {
+    opacity: 0.9;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 0.2rem $light-color;
+
+  }
+}
+
+#button-success {
+  background-color: $success-color;
+  color: $white;
+  border-color: $success-color;
+
+  &:hover:not([disabled]) {
+    opacity: 0.9;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 0.2rem $success-light;
+  }
+}
+
+#button-decline {
+  background-color: $decline-color;
+  color: $white;
+  border-color: $decline-color;
+
+  &:hover:not([disabled]) {
+    opacity: 0.9;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 0.2rem $decline-light;
+  }
+}
