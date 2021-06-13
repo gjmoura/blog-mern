@@ -4,7 +4,7 @@ const ViewPost = () => {
     return (
         <div>
             <header>
-                <h1>Tela de Login</h1>
+                <h1>Tela de Postagem</h1>
             </header>
         </div>
     );
