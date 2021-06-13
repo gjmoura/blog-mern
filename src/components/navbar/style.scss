@@ -1,1 +1,28 @@
 @import '../variables.scss';
+
+nav {
+  background-color: $base-color;
+
+  a {
+    color: $white;
+    display: flex;
+    align-items: center;
+    
+    &:hover {
+      color: $white;
+      text-decoration: none;
+      opacity: 0.8;
+    }
+  }
+
+  .navbar-brand {
+    font-family: 'Mr Dafoe', cursive;
+    // border: 1px solid white;
+    // border-radius: 10px;
+  }
+
+  .navbar-nav {
+    display: flex;
+    align-items: center;
+  }
+}
